@@ -9,11 +9,13 @@ export default function Map() {
             <img src={buildings} alt='buildings' className='campus-map'/>
 
             <a href="/">
-                <div className="location location-coecsa"></div>
+                <div className="buildings coecsa-building"></div>
             </a>
+        
             <a href="/">
-                <div className="location location-annex"></div>
+                <div className="buildings annex-building"></div>
             </a>
+
         </div>
         </>
     )
