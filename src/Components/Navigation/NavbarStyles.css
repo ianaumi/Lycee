@@ -1,0 +1,100 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bdc6d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 10px 400px;
+}
+
+#navbar-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-items li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar-items li a{
+    text-decoration: none;
+    color: #404040;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s eas;
+}
+
+#navbar-items li a:hover,
+#navbar-items li a.nav-link-home{
+    color: #8c0001;
+}
+
+#navbar-items li a:hover::after,
+#navbar-items li a.nav-link-home::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #8c0001;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.lycee-logo{
+    max-width: 100%;
+    height: 5rem;
+}
+
+.burger-menu{
+    align-items: center;
+    color: #404040;
+}
+
+#mobile-view {
+    display: none;
+}
+
+@media  screen and (max-width:769px) {
+    .navbar-container{
+        padding: 10px 50px;
+    }
+
+    #navbar-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: -300px;
+        right: 0px;
+        left: 0px;
+        height: 30vh;
+        background: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .1);
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar-items.active{
+        top: 107px;
+    }
+
+    #navbar-items li{
+        margin-bottom: 25px;
+    }
+
+    #mobile-view {
+        display: block;
+    }
+
+    .burger-menu{
+        font-size: 24px;
+        cursor: pointer;
+    }
+}

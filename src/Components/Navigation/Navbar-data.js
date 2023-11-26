@@ -2,16 +2,21 @@ export const NavbarData = [
     {
         title: "Home",
         url: '/',
-        class: "nav-link"
+        class: "nav-link-home"
     },
     {
         title: "About",
-        url: '/About',
+        url: '/about',
+        class: "nav-link"
+    },
+    {
+        title: "Map",
+        url: '/map',
         class: "nav-link"
     },
     {
         title: "Events",
-        url: '/Events',
+        url: '/events',
         class: "nav-link"
     },
 ]
