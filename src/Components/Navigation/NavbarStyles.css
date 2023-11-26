@@ -50,3 +50,50 @@
     max-width: 100%;
     height: 5rem;
 }
+
+.burger-menu{
+    align-items: center;
+    color: #404040;
+}
+
+#mobile-view {
+    display: none;
+}
+
+@media  screen and (max-width:769px) {
+    .navbar-container{
+        padding: 10px 50px;
+    }
+
+    #navbar-items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: -300px;
+        right: 0px;
+        left: 0px;
+        height: 30vh;
+        background: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .1);
+        padding: 40px 0 0 10px;
+    }
+
+    #navbar-items.active{
+        top: 107px;
+    }
+
+    #navbar-items li{
+        margin-bottom: 25px;
+    }
+
+    #mobile-view {
+        display: block;
+    }
+
+    .burger-menu{
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
