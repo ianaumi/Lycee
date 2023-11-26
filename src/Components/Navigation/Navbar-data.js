@@ -6,12 +6,12 @@ export const NavbarData = [
     },
     {
         title: "About",
-        url: '/',
+        url: '/About',
         class: "nav-link"
     },
     {
         title: "Events",
-        url: '/',
+        url: '/Events',
         class: "nav-link"
     },
 ]
