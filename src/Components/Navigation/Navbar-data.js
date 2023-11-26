@@ -10,11 +10,6 @@ export const NavbarData = [
         class: "nav-link"
     },
     {
-        title: "Discover",
-        url: '/',
-        class: "nav-link"
-    },
-    {
         title: "Events",
         url: '/',
         class: "nav-link"
