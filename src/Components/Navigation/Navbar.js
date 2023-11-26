@@ -1,18 +1,19 @@
-import logo from '../../Assets/lycee-logo.png'
-import { Component } from 'react'
-import { NavbarData } from './Navbar-data'
-import { Link } from 'react-router-dom'
+import logo from '../../Assets/lycee-logo.png';
+import { Component } from 'react';
+import { NavbarData } from './Navbar-data';
+import { Link } from 'react-router-dom';
+import '../Navigation/NavbarStyles.css';
 
 export default class Navbar extends Component {
     render(){
         return(
             <>
-                <nav className='navbar-items'>
+                <nav className='navbar-container'>
                     <a href='/'>
-                        <img src={logo}></img>
+                        <img src={logo} className='lycee-logo'></img>
                     </a>
 
-                    <ul> {/*maps item object to link*/}
+                    <ul id="navbar-items"> {/*maps item object to link*/}
                         {NavbarData.map((item,index) => {
                             return(
                                 <li key = {index}>
