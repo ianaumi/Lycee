@@ -1,0 +1,14 @@
+.map-container{
+    padding-top: 2rem;
+}
+
+.map-container h1{
+    padding-bottom: 2rem;
+
+}
+
+.campus-map{
+    width: 50%;
+    height: 500px;
+    border-style: solid;
+}
