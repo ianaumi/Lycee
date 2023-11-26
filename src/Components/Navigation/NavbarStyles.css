@@ -30,8 +30,20 @@
     transition: 0.3s eas;
 }
 
-#navbar-items li a:hover{
+#navbar-items li a:hover,
+#navbar-items li a.nav-link-home{
     color: #8c0001;
+}
+
+#navbar-items li a:hover::after,
+#navbar-items li a.nav-link-home::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #8c0001;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
 }
 
 .lycee-logo{
