@@ -1,0 +1,40 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bdc6d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 10px 300px;
+}
+
+#navbar-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar-items li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar-items li a{
+    text-decoration: none;
+    color: #404040;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s eas;
+}
+
+#navbar-items li a:hover{
+    color: #8c0001;
+}
+
+.lycee-logo{
+    max-width: 100%;
+    height: 5rem;
+}
