@@ -1,17 +1,18 @@
-import card1 from "../../Assets/coecsa-event.jpg"
-import logo1 from "../../Assets/coecsa-logo.png"
+import card1 from "../../Assets/coecsa-event.jpg";
+import logo1 from "../../Assets/coecsa-logo.png";
+import "./CardStyles.css";
 
 export default function Card (){
     return(
         <>
         <div className="card-container">
-            <div>
+            <div className="card-image">
                 <img src={card1} alt='card'/>
             </div>
 
             <div className="card-body">
-                <h4>COECSA NIGHT</h4>
-                <p>It's finally here, COECSAns! The wait is over for the COECSA Night 2023! Cheer on as your favorite performers and your beloved student organizations battle it out to see who the best of the best is!</p>
+                <p className="card-title">COECSA NIGHT</p>
+                <p className="card-description">It's finally here, COECSAns! The wait is over for the COECSA Night 2023! Cheer on as your favorite performers and your beloved student organizations battle it out to see who the best of the best is!</p>
             </div>
 
             <div className="card-footer">
