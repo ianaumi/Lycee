@@ -1,0 +1,53 @@
+.map-container{
+    padding-top: 2rem;
+}
+
+.map-container h1{
+    padding-bottom: 2rem;
+
+}
+
+.campus-map{
+    width: 50%;
+    height: 500px;
+    border-style: solid;
+}
+
+.buildings {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 180px;
+    border-style: solid;
+}
+
+.buildings.coecsa-building{
+    left: 900px;
+    top: 250px;
+    width: 100px; 
+    height: 120px;
+}
+
+.buildings.annex-building{
+    left: 1050px;
+    top: 250px;
+    width: 100px; 
+    height: 120px;
+}
+
+@media  screen and (max-width:769px){
+
+    .campus-map{
+        width: 100%;
+        height: 500px;
+    }
+
+    .buildings.coecsa-building{
+        left: 3px;
+        top: 250px;
+        width: 100px; 
+        height: 120px;
+    }
+
+}
