@@ -11,15 +11,15 @@ export default function Card (){
             </div>
 
             <div className="card-body">
-                <p className="card-title">COECSA NIGHT</p>
+                <h3>COECSA NIGHT</h3>
+                <div className="card-footer">
+                    <img src={logo1} alt='logo'/>
+                    <p>COECSA |</p>
+                    <time>November 20, 2023</time>
+                </div>
                 <p className="card-description">It's finally here, COECSAns! The wait is over for the COECSA Night 2023! Cheer on as your favorite performers and your beloved student organizations battle it out to see who the best of the best is!</p>
             </div>
 
-            <div className="card-footer">
-                <img src={logo1} alt='logo'/>
-                <p>COECSA |</p>
-                <time>November 20, 2023</time>
-            </div>
         </div>
         </>
     )
