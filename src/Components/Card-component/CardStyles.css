@@ -3,6 +3,7 @@
     width: 300px;
     overflow: hidden;
     transition: 0.3s ease-in-out;
+    border-radius: 5px;
 }
 
 .card-container:hover{
