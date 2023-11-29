@@ -14,6 +14,7 @@ export default function Card (){
                 <h3>COECSA NIGHT</h3>
                 <div className="card-footer">
                     <img src={logo1} alt='logo'/>
+                    
                     <p>COECSA |</p>
                     <time>November 20, 2023</time>
                 </div>
