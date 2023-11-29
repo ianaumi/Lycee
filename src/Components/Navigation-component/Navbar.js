@@ -2,7 +2,7 @@ import logo from '../../Assets/lycee-logo.png';
 import { Component } from 'react';
 import { NavbarData } from './Navbar-data';
 import { Link } from 'react-router-dom';
-import '../Navigation/NavbarStyles.css';
+import './NavbarStyles.css';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 
