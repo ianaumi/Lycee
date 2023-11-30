@@ -1,5 +1,4 @@
 import "./BuildingCardStyles.css";
-import Button from "../Button/Button";
 
 export default function BuildingCard(props){
     return(
