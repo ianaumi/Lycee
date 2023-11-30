@@ -1,6 +1,10 @@
 .card-container{
-    box-shadow: 0px 0px 15px -5px;
-    width: 300px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bdc6d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    width: 330px;
+    height: 500px;
     overflow: hidden;
     transition: 0.3s ease-in-out;
     border-radius: 5px;
@@ -31,7 +35,7 @@
 
 .card-image img{
     overflow: hidden;
-    height: 200px;
+    height: 250px;
     width: 100%;
 
 }
