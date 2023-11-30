@@ -1,16 +1,17 @@
 .building-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     box-shadow: 0px 0px 15px -5px;
-    width: 600px;
-    height: 300px;
+    width: 530px;
+    height: 400px;
     overflow: hidden;
     transition: 0.3s ease-in-out;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .building-img{
+    margin-top: 6.3rem;
     height: 300px;
     width: 300px;
     overflow: hidden;
@@ -22,8 +23,7 @@
 }
 
 .building-description{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: 2rem 2rem;
     text-align: start;
     width: 50%;
 }
