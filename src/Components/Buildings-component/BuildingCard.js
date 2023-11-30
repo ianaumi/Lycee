@@ -7,8 +7,8 @@ export default function BuildingCard(){
         
         <div className="building-container">
             <div className="building-description">
-                    <h1>COECSA</h1>
-                    <h3>College Of Engineering, Computer Studies and Architecture</h3>
+                    <h3>COECSA</h3>
+                    <h4>College Of Engineering, Computer Studies and Architecture</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. equenean at quam mollis, tempus leo vel,</p>
             </div>
             <div className="building-img">
