@@ -1,7 +1,7 @@
 .building-container{
     box-shadow: 0px 20px 50px rgba(122, 134, 153, 0.12);
     padding: 30px 30px 200px 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     position: relative;
     height: 460px;
     width: 528px;
@@ -56,10 +56,12 @@
 }
 
 .buttones button{
-    background-color: #272b36;
+    background-color: #8c0001;
     color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 28px;
     border: none;
     cursor: pointer;
 }
