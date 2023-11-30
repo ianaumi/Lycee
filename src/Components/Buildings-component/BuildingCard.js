@@ -1,18 +1,16 @@
 import "./BuildingCardStyles.css";
-import coecsaArt from "../../Assets/coecsa-art.png"
 
-export default function BuildingCard(){
+export default function BuildingCard(props){
     return(
         <>
-        
         <div className="building-container">
             <div className="building-description">
-                    <h3>COECSA</h3>
-                    <h4>College Of Engineering, Computer Studies and Architecture</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. equenean at quam mollis, tempus leo vel,</p>
+                    <h3>{props.title}</h3>
+                    <h4>{props.sub}</h4>
+                    <p>{props.description}</p>
             </div>
             <div className="building-img">
-                <img src={coecsaArt} alt="card-img"></img>
+                <img src={props.img} alt="card-img"></img>
             </div>
         </div>
         </>
