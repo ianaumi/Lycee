@@ -5,12 +5,19 @@
     position: relative;
     height: 460px;
     width: 528px;
-    background-color: white;
     border-style: solid;
     border-width: thin;
     border-color: #bdc6d1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    background-color: #ffffff;
     overflow: hidden;
+}
+
+.buttones{
+    position: relative;
+    z-index: 4;
+    align-items: start;
+    width: 10%;
 }
 
 .building-img{
@@ -23,26 +30,16 @@
     overflow: hidden;
 }
 
-.building-img img{
-    height: 100%;
-    width: 100%;
-}
-
 .building-description{
-    position: absolute;
+    position: relative;
+    z-index: 3;
     text-align: start;
-    width: 90%;
-    font-size: 18px;
-    line-height: 28px;
+    padding-bottom: 15px;
 }
 
-.building-description h3{
-    font-size: 36px;
-    padding-bottom: 0.5rem;
-    color: #272b36;
-}
 
 .building-description h4{
+    font-size: 18px;
     color: #93969d;
 }
 
@@ -52,4 +49,29 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+
 }
+
+.buttones button{
+    background-color: #272b36;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.building-description h3{
+    font-size: 36px;
+    padding-bottom: 0.5rem;
+    color: #272b36;
+}
+
+.building-img img{
+    height: 100%;
+    width: 100%;
+}
+
