@@ -1,0 +1,20 @@
+.campus-wrap{
+    margin: 0 auto;
+ 
+    
+}
+.campus-container{
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1300px;
+}
+
+.campus-slider{
+    margin: 0 auto;
+}
+
+.heading h1{
+    font-size: 38px;
+    text-align: start;
+    padding: 2rem 0;
+}

@@ -6,7 +6,6 @@ import { Button } from '../Button-component/Button';
 export default function BuildingCard(){
     return(
         <>
-        <div className="wrap">
         <div className="building-card">
             <img src={coecsa}/>
             <div className="building-content">
@@ -16,8 +15,6 @@ export default function BuildingCard(){
             <button>Navigate</button>
             </div>
         </div>
-        </div>
-        
         </>
     )
 }

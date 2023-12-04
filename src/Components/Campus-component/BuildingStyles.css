@@ -4,7 +4,6 @@
     border-width: thin;
     border-color: #bdc6d1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    width: 400px;
     height: 100%;
 }
 
@@ -44,8 +43,4 @@
     border-radius: 5px;
     font-size: large;
     font-weight: bold;
-}
-
-.wrap{
-    margin: 50px 50px;
 }
