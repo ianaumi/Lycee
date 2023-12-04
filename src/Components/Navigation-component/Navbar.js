@@ -1,5 +1,5 @@
 import logo from '../../Assets/lycee-logo.png';
-import { Component, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarStyles.css';
 import { HiMenuAlt3 } from "react-icons/hi";
@@ -23,6 +23,10 @@ export default function Navbar (){
             setButton(true)
         }
     };
+
+    useEffect(() => {
+        showButton();
+    },[]);
 
     window.addEventListener('resize', showButton);
 
