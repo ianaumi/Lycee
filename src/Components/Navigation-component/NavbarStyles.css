@@ -1,100 +1,152 @@
-.navbar-container{
+.navbar {
+    height: 80px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: white;
     border-style: solid;
     border-width: thin;
     border-color: #bdc6d1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    padding: 10px 400px;
 }
-
-#navbar-items{
+  
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1100px;
+}
+  
+.navbar-logo {
+    color: #8c0001;
+    justify-self: start;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-
-#navbar-items li{
+  
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     list-style: none;
-    padding: 0 20px;
-    position: relative;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 0.5rem;
 }
-
-#navbar-items li a{
-    text-decoration: none;
-    color: #404040;
-    font-size: 1.3rem;
-    font-weight: 600;
-    transition: 0.3s eas;
-}
-
-#navbar-items li a:hover,
-#navbar-items li a.nav-link-home{
-    color: #8c0001;
-}
-
-#navbar-items li a:hover::after,
-#navbar-items li a.nav-link-home::after{
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: #8c0001;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-}
-
-.lycee-logo{
-    max-width: 100%;
-    height: 5rem;
-}
-
-.burger-menu{
+  
+  
+.nav-links {
+    color: #272b36;
+    font-weight: 700;
+    display: flex;
     align-items: center;
-    color: #404040;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
 }
-
-#mobile-view {
+  
+.nav-links:hover {
+    border-bottom: 4px solid #8c0001;
+    transition: all 0.2s ease-out;
+}
+  
+  .nav-links-mobile {
     display: none;
 }
-
-@media  screen and (max-width:769px) {
-    .navbar-container{
-        padding: 10px 50px;
+  
+.menu-icon {
+    display: none;
+}
+  
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
     }
-
-    #navbar-items{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: -300px;
-        right: 0px;
-        left: 0px;
-        height: 30vh;
-        background: white;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, .1);
-        padding: 40px 0 0 10px;
-        transition: 0.3s ease-in-out;
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
     }
-
-    #navbar-items.active{
-        top: 107px;
+  
+    .nav-menu.active {
+      background: white;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
     }
-
-    #navbar-items li{
-        margin-bottom: 25px;
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
     }
-
-    #mobile-view {
-        display: block;
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
     }
-
-    .burger-menu{
-        font-size: 24px;
-        cursor: pointer;
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      color: #404040;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
     }
 }
