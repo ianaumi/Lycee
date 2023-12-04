@@ -1,41 +1,55 @@
 import logo from '../../Assets/lycee-logo.png';
-import { Component } from 'react';
-import { NavbarData } from './Navbar-data';
+import { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarStyles.css';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import { AiFillAliwangwang } from "react-icons/ai";
+import { NavbarData } from './NavbarData';
+import { Button } from '../Button-component/Button';
 
-export default class Navbar extends Component {
-    state = { clicked : false};
-    handleClick = () => {
-        this.setState({clicked: !this.state.clicked});
-    }
+export default function Navbar (){
+    const [click,setCLick] = useState(false);
+    const [button, setButton] = useState(true);
 
+    const handleClick = () => setCLick(!click);
+    const closeMobileMenu = () => setCLick(false);
 
-    render(){
-        return(
-            <>
-                <nav className='navbar-container'>
-                    <a href='/'>
-                        <img src={logo} className='lycee-logo'></img>
-                    </a>
- 
-                    <ul id="navbar-items" className={this.state.clicked ? "#navbar-items active" : "#navbar-items"}> {/*maps item object to link*/}
-                        {NavbarData.map((item,index) => {
-                            return(
-                                <li key = {index}>
-                                    <Link className = {item.class} to = {item.url}>{item.title}</Link>
-                                </li>
-                            );
-                        })}
+    const showButton = () => {
+        if(window.innerWidth <= 960){
+            setButton(false)
+        }
+        else{
+            setButton(true)
+        }
+    };
 
-                    </ul>
-                    <div id="mobile-view" onClick={this.handleClick}>
+    window.addEventListener('resize', showButton);
+
+    return(
+        <>
+            <nav className='navbar'>
+                <div className="navbar-container">
+                    <Link to="/" className="navbar-logo">
+                        <AiFillAliwangwang className='lycee-logo'/>lycee
+                    </Link>
+                    <div className="menu-icon" onClick={handleClick}>
                         <HiMenuAlt3 className="burger-menu"/>
-                    </div>
-                </nav>
-            </>
-        )
-    }
+                    </div> 
+                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                        {NavbarData.map((item,index) => {
+                            return (
+                                <li key={index} className='nav-item'>
+                                    <Link to ={item.url} className={item.class} onClick={closeMobileMenu}>
+                                        {item.title}
+                                    </Link>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                </div>
+            </nav>
+        </>
+    )
 }
