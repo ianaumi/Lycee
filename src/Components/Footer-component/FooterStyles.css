@@ -1,0 +1,70 @@
+
+.footer-wrap{
+    padding: 80px 13% 70px;
+    background-color: #f7f8f9;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    gap: 3.5rem;
+}
+
+.footer-logo{
+    color: #8c0001;
+    justify-self: start;
+    text-decoration: none;
+    font-family: 'Changa One', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content h4{
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.footer-content li{
+    margin-bottom: 16px;
+}
+
+.footer-content li a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .40s ease;
+}
+
+.icons{
+    font-size: 40px;
+    display: flex;
+    gap: 50px;
+    padding: 2rem 0;
+    color: #8c0001;
+}
+
+.email{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.email u{
+    color: black;
+    text-decoration: underline !important;
+}
+
+.email-logo{
+    color:#8c0001;
+}
+
+.footer-desc{
+    padding-top: 2rem;
+}
+
+.copyright{
+    padding-top: 2rem;
+}
