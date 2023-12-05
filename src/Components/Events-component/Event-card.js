@@ -1,11 +1,14 @@
 import './EventCardStyles.css';
 import cbaEvent from '../../Assets/cba-event.jpg'
 import cbaLogo from '../../Assets/cba-logo.png'
+import { IoNotificationsOutline } from "react-icons/io5";
+import bellIcon from "../../Assets/bell-icon.png";
 
 export default function() {
     return(
         <>
             <div className='event-container'>
+                <img src={bellIcon} alt="" className='bell-icon'/>
                 <div className='event-img'>
                     <img src={cbaEvent}/>
                 </div>
