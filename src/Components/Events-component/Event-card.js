@@ -7,8 +7,10 @@ import bellIcon from "../../Assets/bell-icon.png";
 export default function() {
     return(
         <>
-            <div className='event-container'>
+            <div className='event-card-container'>
+                <div className="bell-icon-container">
                 <img src={bellIcon} alt="" className='bell-icon'/>
+                </div>
                 <div className='event-img'>
                     <img src={cbaEvent}/>
                 </div>

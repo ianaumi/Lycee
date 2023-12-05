@@ -1,5 +1,4 @@
-.event-container{
-    width: 348px;
+.event-card-container{
     height: auto;
     background-color: white;
     border-style: solid;
@@ -64,12 +63,14 @@
     object-fit: cover;
 }
 
-.bell-icon{
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 288px;
-    color: rgb(255, 255, 255);
-    width: 50px;
-    font-weight: bolder;
-
+.bell-icon-container{
+    position: relative;
 }
+
+.bell-icon-container img{
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    left: 310px; 
+}
+
