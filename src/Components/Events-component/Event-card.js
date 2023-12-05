@@ -1,22 +1,24 @@
 import './EventCardStyles.css';
+import cbaEvent from '../../Assets/cba-event.jpg'
+import cbaLogo from '../../Assets/cba-logo.png'
 
 export default function() {
     return(
         <>
             <div className='event-container'>
                 <div className='event-img'>
-                    <img src='https://img.freepik.com/premium-vector/photo-icon-picture-icon-image-sign-symbol-vector-illustration_64749-4409.jpg'/>
+                    <img src={cbaEvent}/>
                 </div>
                 <div className='event-content'>
-                    <h3>Event title</h3>
+                    <h3>CBA DAY</h3>
+                    <p>Embrace the carnival fun and experience the CBA magic! As we are inviting all CBA Jaguars to join the CBA Day 'til Night today, November 16, 2023!</p>
                     <div className='event-info'>
                         <div className='logo'>
-                            <img src='https://i.pinimg.com/originals/0d/cf/b5/0dcfb548989afdf22afff75e2a46a508.jpg'/>
+                            <img src={cbaLogo}/>
                         </div>
-                        <h4>Department</h4>
-                        <time>MM DD YYYY</time>
+                        <h4>CBA</h4>
+                        <time>Nov 26 2023</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis felis eros. In a ante quis quam viverra finibus. Curabitur vitae vestibulum lacus. Aenean hendrerit tortor at neque iaculis, eu euismod lacus malesuada.</p>
                 </div>
             </div>
         </>
