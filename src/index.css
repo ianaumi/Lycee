@@ -8,6 +8,33 @@
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p{
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .05em;
+}
+
+h1,
+h2,
+h3,
+h4{
+color: rgb(26, 26, 26);
+}
+
+
+p{
+  letter-spacing: .03em;
+  line-height: 1.25em;
+  font-weight: 500;
+  color: #777;
+  
+}
 .App{
   font-family: 'Roboto', sans-serif;
 }
