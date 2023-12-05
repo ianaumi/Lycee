@@ -1,0 +1,36 @@
+.event-container{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bdc6d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.event-content{
+    
+}
+
+.event-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 25px;
+}
+
+.event-info img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
