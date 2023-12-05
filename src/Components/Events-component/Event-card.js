@@ -1,4 +1,4 @@
-import './EventStyles.css';
+import './Event-CardStyles.css';
 
 export default function() {
     return(
