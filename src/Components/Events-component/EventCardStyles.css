@@ -7,10 +7,15 @@
     border-color: #bdc6d1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 
 .event-content{
-    
+    padding: 0 1rem;
+}
+
+.event-content h3{
+    padding-top: 0.5rem;
 }
 
 .event-img img{
@@ -23,9 +28,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0.5rem;
+    align-items: flex-start;
 }
 
 .logo{
+    border-style: solid;
     width: 25px;
 }
 
