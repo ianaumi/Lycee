@@ -26,6 +26,21 @@ export default function Campus () {
                     slidesPerView={2}
                     navigation={true}
                     pagination={true}
+                    breakpoints={{
+                        // when window width is >= 340px
+                        340: {
+                          slidesPerView: 1,
+                        },
+                        // when window width is >= 840px
+                        840: {
+                          slidesPerView: 1,
+                        },
+                        // when window width is >= 1040px
+                        840: {
+                          slidesPerView: 2,
+                        },
+                      }}
+                
                     
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
