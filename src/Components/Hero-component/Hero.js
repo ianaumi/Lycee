@@ -1,5 +1,5 @@
 import './HeroStyles.css';
-import parrot from '../../Assets/parrot-logo.png'
+import logo from '../../Assets/hero-logo.png'
 
 export default function () {
     return(
@@ -11,7 +11,7 @@ export default function () {
                 </div>
                 
                 <div className="her-right">
-                    <img src={parrot} alt=""/>
+                    <img src={logo} alt=""/>
                 </div>
             </div>
         </div>
