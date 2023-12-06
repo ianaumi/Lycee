@@ -4,7 +4,7 @@ import cbaLogo from '../../Assets/cba-logo.png'
 import { IoNotificationsOutline } from "react-icons/io5";
 import bellIcon from "../../Assets/bell-icon.png";
 
-export default function() {
+export default function(props) {
     return(
         <>
             <div className='event-card-container'>
@@ -12,17 +12,17 @@ export default function() {
                 <img src={bellIcon} alt="" className='bell-icon'/>
                 </div>
                 <div className='event-img'>
-                    <img src={cbaEvent}/>
+                    <img src={props.eventImg}/>
                 </div>
                 <div className='event-content'>
-                    <h3>CBA DAY</h3>
-                    <p>Embrace the carnival fun and experience the CBA magic! As we are inviting all CBA Jaguars to join the CBA Day 'til Night today, November 16, 2023!</p>
+                    <h3>{props.eventName}</h3>
+                    <p>{props.eventDescription}</p>
                     <div className='event-info'>
                         <div className='logo'>
-                            <img src={cbaLogo}/>
+                            <img src={props.departmentLogo}/>
                         </div>
-                        <h4>CBA</h4>
-                        <time>Nov 26 2023</time>
+                        <h4>{props.departmentName}</h4>
+                        <time>{props.eventDate}</time>
                     </div>
                 </div>
             </div>
