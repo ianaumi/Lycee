@@ -4,7 +4,7 @@ export default function CampusPage () {
     return(
         <>
         <Navbar/>
-            <h2>Campus Page</h2>
+            <h2>Campus</h2>
         </>
     )
 }
