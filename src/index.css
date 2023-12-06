@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,33 @@
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+p{
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .05em;
+}
+
+h1,
+h2,
+h3,
+h4{
+color: rgb(26, 26, 26);
+}
+
+
+p{
+  letter-spacing: .03em;
+  line-height: 1.25em;
+  font-weight: 500;
+  color: #777;
+  
+}
 .App{
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }

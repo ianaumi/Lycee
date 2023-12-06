@@ -1,4 +1,3 @@
-import logo from '../../Assets/lycee-logo.png';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarStyles.css';

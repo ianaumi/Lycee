@@ -1,0 +1,46 @@
+.building-card{
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #bdc6d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 100%;
+}
+
+.building-content{
+    padding: 0.5rem 1rem 1rem;
+}
+
+.building-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.building-card h3{
+    font-size: 28px;
+    color: #272b36;
+}
+
+.building-card h4{
+    font-size: 22px;
+    color: #adb0b4;
+    padding-bottom: 0.5rem;
+}
+
+.building-card p{
+    padding-bottom: 1rem;
+    font-size: 18px;
+}
+
+.building-card button{
+    align-self: center;
+    background-color: #8c0001;
+    color: white;
+    border-style: none;
+    padding: 0.5em 1em;
+    width: 100%;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}

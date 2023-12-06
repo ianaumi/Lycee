@@ -1,0 +1,43 @@
+.hero-wrap{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.hero-wrap h2{
+    font-size: 80px;
+    color: white;
+}
+
+.hero-bg{
+    max-width: 2000px;
+    background-color: #8c0000ed;
+}
+
+.hero-wrap img{
+    max-width: 100%;
+}
+
+.line-break{
+    width: 1300px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 960px) {
+    .hero-wrap{
+        display: block;
+    }
+
+    .hero-wrap img{
+        max-width: 100%;
+    }
+
+    .hero-wrap h2{
+        font-size: 60px;
+        padding-bottom: 2rem;
+    }
+}   

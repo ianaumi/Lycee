@@ -1,0 +1,19 @@
+.event-wrap{
+    margin: 0 auto;
+}
+
+.event-container{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 2rem;
+}
+
+.event-slider{
+    margin: 0 auto;
+}
+
+.event-container h1{
+    font-size: 38px;
+    text-align: start;
+    padding: 2rem 0;
+}
