@@ -8,6 +8,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import BuildingCard from './BuildingCard';
+import coecsa from '../../Assets/coecsa-art.png';
+
+import { BuildingData } from './BuildingData';
 
 
 
@@ -46,11 +49,18 @@ export default function Campus () {
                     onSwiper={(swiper) => console.log(swiper)}
                     className='campus-swiper'
                     >
-                        <SwiperSlide className='slide'><BuildingCard/></SwiperSlide>
-                        <SwiperSlide className='slide'><BuildingCard/></SwiperSlide>
-                        <SwiperSlide className='slide'><BuildingCard/></SwiperSlide>
-                        <SwiperSlide className='slide'><BuildingCard/></SwiperSlide>
-                        <SwiperSlide className='slide'><BuildingCard/></SwiperSlide>
+                          {BuildingData.map((item,index) =>{
+                            return(
+                              <SwiperSlide>
+                                <BuildingCard
+                                  buildingImg = {item.buildingImg}
+                                  name = {item.buildingName}
+                                  location = {item.buildingLocation}
+                                  description = {item.buildingDesc}
+                                />
+                              </SwiperSlide>
+                            )
+                          })}
                     </Swiper>
                 </div>
             </div>
