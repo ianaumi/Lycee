@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom';
 import { Button } from '../Button-component/Button';
 
 
-export default function BuildingCard(){
+export default function BuildingCard(props){
     return(
         <>
         <div className="building-card">
-            <img src={coecsa}/>
+            <img src={props.eventImg}/>
             <div className="building-content">
-                <h3>COECSA</h3>
-                <h4>North</h4>
-                <p>Lorem ipsum dolonsectetur adipiscing elitor sit amet, consectetur adipiscing elit. Cras eu eleifend sapien. </p>
+                <h3>{props.name}</h3>
+                <h4>{props.location}</h4>
+                <p>{props.description}</p>
                 <Link to='/Campus'>
                     <button type='button'>Navigate</button>
                 </Link>
