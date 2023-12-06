@@ -1,5 +1,5 @@
 .about-lycee-wrap{
-    background-color: #503A6D;
+    background-color: #dde0e4;
 }
 
 .content{
@@ -14,7 +14,6 @@
 .about-lycee-right img{
     width: 100%;
     border-radius: 50px;
-    box-shadow: 3px 4px 20px 6px #00000063;
 }
 
 .about-lycee-right{
@@ -23,19 +22,19 @@
 
 .about-lycee-left p{
     padding-top: 1rem;
-    color: white;
+    color: black;
     width: 60%;
+    font-size: 18px;
 }
 
 .about-lycee-left h1{
-    color: white;
+    color: #8c0001;
     font-size: 80px;
 }
 
 @media screen and (max-width: 960px) {
     .about-lycee-wrap{
         overflow: hidden;
-
     }
 
     .content{
@@ -50,8 +49,7 @@
     }
 
     .about-lycee-container img{
-        max-width: 50%;
-        border-radius: 20px;
+        max-width: 70%;
     }
 
     .about-lycee-container h1{
