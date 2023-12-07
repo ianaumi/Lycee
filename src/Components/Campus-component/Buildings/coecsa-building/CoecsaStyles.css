@@ -1,0 +1,22 @@
+
+
+
+.coecsa-container{
+    border-style: solid;
+    touch-action: none;
+    max-width: 1300px;
+    height: 300px;
+    overflow: hidden;
+    touch-action: none;
+}
+
+
+.coecsa-container img{
+    width: 200;
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    object-fit: contain;
+    max-width: none;
+    max-height: none;
+}
