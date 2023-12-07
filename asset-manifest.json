@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Lycee/static/css/main.ebd6ad96.css",
-    "main.js": "/Lycee/static/js/main.1459a4c0.js",
+    "main.js": "/Lycee/static/js/main.c26550fb.js",
     "static/media/dev-pic.png": "/Lycee/static/media/dev-pic.446902d66610ad20f7fb.png",
     "static/media/cba-logo.png": "/Lycee/static/media/cba-logo.0ed43666ef7f2a9a2b23.png",
     "static/media/coecsa-firstfloor.svg": "/Lycee/static/media/coecsa-firstfloor.ba17f969486269a0ac2cf502dd0ef8c7.svg",
@@ -11,10 +11,10 @@
     "static/media/coecsa-art.png": "/Lycee/static/media/coecsa-art.ffefb20917425b57bd4a.png",
     "index.html": "/Lycee/index.html",
     "main.ebd6ad96.css.map": "/Lycee/static/css/main.ebd6ad96.css.map",
-    "main.1459a4c0.js.map": "/Lycee/static/js/main.1459a4c0.js.map"
+    "main.c26550fb.js.map": "/Lycee/static/js/main.c26550fb.js.map"
   },
   "entrypoints": [
     "static/css/main.ebd6ad96.css",
-    "static/js/main.1459a4c0.js"
+    "static/js/main.c26550fb.js"
   ]
 }
