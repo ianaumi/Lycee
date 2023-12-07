@@ -1,0 +1,59 @@
+.about-lycee-wrap{
+    background-color: #dde0e4;
+}
+
+.content{
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    padding: 2rem;
+}
+
+.about-lycee-right img{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.about-lycee-right{
+    padding: 2rem;
+}
+
+.about-lycee-left p{
+    padding-top: 1rem;
+    color: black;
+    width: 60%;
+    font-size: 18px;
+}
+
+.about-lycee-left h1{
+    color: #8c0001;
+    font-size: 80px;
+}
+
+@media screen and (max-width: 960px) {
+    .about-lycee-wrap{
+        overflow: hidden;
+    }
+
+    .content{
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .about-lycee-left p{
+        padding-top: 1rem;
+        margin: auto;
+        width: 70%;
+    }
+
+    .about-lycee-container img{
+        max-width: 70%;
+    }
+
+    .about-lycee-container h1{
+        padding-top: 2rem;
+        font-size: 50px;
+    }
+}   

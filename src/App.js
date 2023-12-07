@@ -1,7 +1,8 @@
 import './index.css';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Routes/Home-page';
-import Map from './Routes/Map-page';
+import CampusPage from './Routes/CampusPage';
+import AboutPage from './Routes/About-page';
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
 
       <Routes>
           <Route path="/"element={<Home/>}/>
-          <Route path="/Map"element={<Map/>}/>
+          <Route path="/About"element={<AboutPage/>}/>
+          <Route path="/Campus"element={<CampusPage/>}/>
       </Routes>
-
     </div>
   );
 }

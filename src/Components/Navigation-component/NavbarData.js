@@ -10,8 +10,8 @@ export const NavbarData = [
         class: "nav-links"
     },
     {
-        title: "Map",
-        url: '/map',
+        title: "Campus",
+        url: '/campus',
         class: "nav-links"
     },
     {

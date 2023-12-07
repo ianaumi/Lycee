@@ -1,0 +1,33 @@
+.cta-wrap{
+    background-color: #8c0001;
+}
+
+.cta-container{
+    text-align: center;
+    padding: 4rem;
+}
+
+.cta-container p{
+    color: white;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    font-size: 22px;
+}
+
+.cta-container h1{
+    color: white;
+    font-size: 38px;
+    padding-bottom: 1rem;
+}
+
+.cta-container button{
+    background-color: #8c0001;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+}
