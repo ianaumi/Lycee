@@ -3,7 +3,7 @@ import AboutLycee from "../Components/About-component/AboutLycee";
 import { AiFillAliwangwang } from "react-icons/ai";
 import Developer from "../Components/About-component/Developer";
 import Footer from "../Components/Footer-component/Footer";
-import Updates from "../Components/About-component/Updates";
+import CTA from "../Components/About-component/CTA";
 
 export default function AboutPage(){
     return(
@@ -11,7 +11,7 @@ export default function AboutPage(){
         <Navbar/>
         <AboutLycee/>
         <Developer/>
-        <Updates/>
+        <CTA/>
         <Footer/>
         </>
     )
