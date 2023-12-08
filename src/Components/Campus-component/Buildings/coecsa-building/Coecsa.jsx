@@ -1,48 +1,35 @@
 
 import firstfloor from "../../../../Assets/coecsa-firstfloor.svg";
+import mapbg from "../../../../Assets/map-bg.png";
 
 import "./CoecsaStyles.css";
 
-import { useGesture } from "@use-gesture/react";
-import { useRef, useState } from "react";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch"
+
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 export default function Coecsa() {
-
-   
-    let [crop, setCrop] = useState({ x: 0, y: 0, scale: 1 })
-    let imageRef = useRef()
-
-    useGesture(
-        {
-        onDrag: ({ offset:[dx, dy] }) => {
-            setCrop((crop) => ({x:dx, y: dy}))
-        },
-
-        onPinch: ({ offset: [d] }) => {
-            setCrop(crop => ({...crop, scale: 1 + d / 50}))
-        }
-    }, 
-    {
-        target: imageRef,
-        eventOptions: { passive: false},
-    }
-    );
 
     return(
         <>  
             <div className="coecsa-container">
-                <div className="img-container">
-                    <img 
-                    ref={imageRef} 
-                    src={firstfloor} 
-                    alt="" 
-                    style={{
-                        left: crop.x,
-                        top: crop.y,
-                        touchAction : "none",
-                        transform: `scale(${crop.scale})`,
-                    }}
-                    />
+                <div className="img-container" style={{
+                    backgroundColor:'#8c0001',
+                }}>
+                    <TransformWrapper 
+                    defaultScale = {1}
+                    defaultPositionX = {300}
+                    defaultPositionY = {300}>
+                        <TransformComponent>
+                          <img src={firstfloor} alt="" />  
+                        </TransformComponent>
+                    </TransformWrapper>                    
+                </div>
+                <div className="coecsa-pagination">
+                    <FaArrowAltCircleLeft />
+                    <h1> 1st Floor</h1>
+                    <FaArrowAltCircleRight />
                 </div>
             </div>
         </>
