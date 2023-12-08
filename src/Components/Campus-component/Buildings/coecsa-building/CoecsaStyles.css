@@ -14,3 +14,23 @@
     width: 100%;
     height: auto;
 }
+
+.coecsa-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    background-color: #8c0001;
+}
+
+.coecsa-pagination h1{
+    font-size: 30px;
+    color: white;
+}
+
+.arrow {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
