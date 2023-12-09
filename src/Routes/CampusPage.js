@@ -6,10 +6,14 @@ import CTA from "../Components/About-component/CTA";
 
 
 // BUILDING FLOOR IMAGES ******************************************************
-import firstfloor from "../Assets/coecsa-firstfloor.svg";
-import secondfloor from "../Assets/coecsa-firstfloor.svg";
-import thirdloor from "../Assets/coecsa-thirdfloor.png";
-import test from "../Assets/coecsa-art.png"
+import coecsaFirstFloor from "../Assets/coecsa-firstfloor.png";
+import coecsaSecondFloor from "../Assets/coecsa-secondfloor.png";
+
+import annexFirstFloor from "../Assets/annex-firstfloor.png";
+import annexSecondFloor from "../Assets/annex-secondfloor.png";
+
+import jplFirstFloor from "../Assets/jpl-firstfloor.png";
+import jplSecondFloor from "../Assets/jpl-secondfloor.png";
 
 import { useState } from "react";
 
@@ -21,9 +25,11 @@ export default function CampusPage () {
     };
 
     const buildingFloorsMap = {
-        coecsa: [firstfloor, thirdloor],
-        annex: [test],
-        sotero: [thirdloor],
+        coecsa: [coecsaFirstFloor, coecsaSecondFloor, coecsaFirstFloor],
+        annex: [annexFirstFloor, annexSecondFloor, annexFirstFloor],
+        arc: [annexFirstFloor, annexSecondFloor, annexFirstFloor],
+        sotero: [annexFirstFloor, annexSecondFloor, annexFirstFloor],
+        jpl: [jplFirstFloor, jplSecondFloor, jplFirstFloor],
       };
 
     return(
