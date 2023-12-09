@@ -42,7 +42,7 @@ export const BuildingData = [
         buildingImg:  jplBuilding,
         buildingTitle : "JPL",
         buildingLocation : "EAST",
-        buildingDesc: "Communications And Public Affairs Department | Registrar's Office | Accounting Department | Accerdiation Center...",
+        buildingDesc: "Communications And Public Affairs Department | Registrar's Office | Accounting Department | Accerdiation Center",
         buildingName : "sotero",
     },
 

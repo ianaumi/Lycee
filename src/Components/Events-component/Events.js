@@ -52,7 +52,7 @@ export default function() {
                                 eventDescription = {item.eventDesc}
                                 departmentLogo = {item.departmentLogo}
                                 departmentName = {item.departmentName}
-                                evenDate = {item.evenDate}
+                                eventDate = {item.eventDate}
                               />
                             </SwiperSlide>   
                           )
