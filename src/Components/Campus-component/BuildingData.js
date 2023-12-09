@@ -2,22 +2,25 @@
 export const BuildingData = [
     {
         buildingImg: "/",
-        buildingName : "COECSA",
+        buildingTitle : "COECSA",
         buildingLocation : "NORTH",
         buildingDesc: "p",
+        buildingName : "coecsa",
     },
 
     {
         buildingImg: "/",
-        buildingName : "ANNEX",
+        buildingTitle : "ANNEX",
         buildingLocation : "WEST",
         buildingDesc: "A",
+        buildingName : "annex",
     },
 
     {
         buildingImg: "/",
-        buildingName : "SOTERO",
+        buildingTitle : "SOTERO",
         buildingLocation : "EAST",
         buildingDesc: "AA",
+        buildingName : "sotero",
     },
 ]

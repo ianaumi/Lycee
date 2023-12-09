@@ -8,13 +8,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import BuildingCard from './BuildingCard';
-import coecsa from '../../Assets/coecsa-art.png';
 
 import { BuildingData } from './BuildingData';
 
-
-
-export default function Campus () {
+const Campus = ({ onCardClick }) => {
     return(
         <>
         <div className="campus-wrap">
@@ -54,9 +51,11 @@ export default function Campus () {
                               <SwiperSlide>
                                 <BuildingCard
                                   buildingImg = {item.buildingImg}
-                                  name = {item.buildingName}
+                                  title = {item.buildingTitle}
                                   location = {item.buildingLocation}
                                   description = {item.buildingDesc}
+                                  buildingName={item.buildingName}
+                                  onCardClick={onCardClick}
                                 />
                               </SwiperSlide>
                             )
@@ -69,3 +68,4 @@ export default function Campus () {
     )
 }
 
+export default Campus;
