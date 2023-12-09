@@ -1,6 +1,8 @@
 import Navbar from "../Components/Navigation-component/Navbar";
 import Campus from "../Components/Campus-component/Campus";
 import BuildingFloors from "../Components/Campus-component/Buildings/BuildingFloors";
+import Footer from "../Components/Footer-component/Footer";
+import CTA from "../Components/About-component/CTA";
 
 
 // BUILDING FLOOR IMAGES ******************************************************
@@ -31,6 +33,8 @@ export default function CampusPage () {
         {selectedBuilding && (
             <BuildingFloors floors={buildingFloorsMap[selectedBuilding]}/>
         )}
+        <CTA/>
+        <Footer/>
         </>
     )
 }
