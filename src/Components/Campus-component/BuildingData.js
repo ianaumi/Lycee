@@ -27,7 +27,7 @@ export const BuildingData = [
         buildingTitle : "ARC",
         buildingLocation : "NORTH",
         buildingDesc: "Periodicals / Thesis Section | E-Library | Coffee Shop | Circular Section | Highschool Section...",
-        buildingName : "sotero",
+        buildingName : "arc",
     },
     
     {
@@ -43,7 +43,7 @@ export const BuildingData = [
         buildingTitle : "JPL",
         buildingLocation : "EAST",
         buildingDesc: "Communications And Public Affairs Department | Registrar's Office | Accounting Department | Accerdiation Center",
-        buildingName : "sotero",
+        buildingName : "jpl",
     },
 
     
