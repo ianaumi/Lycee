@@ -5,6 +5,7 @@
     border-color: #bdc6d1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     height: 100%;
+    width: 100%;
 }
 
 .building-content{
@@ -15,6 +16,10 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+    
+    border-bottom: solid;
+    border-color: #bdc6d1;
+    border-width: thin;
 }
 
 .building-card h3{
