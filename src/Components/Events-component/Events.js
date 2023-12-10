@@ -16,7 +16,7 @@ export default function() {
         <>
         <div className="event-wrap">
             <div className="event-container">
-                <h1>Upcomming Events</h1>
+                <h1>Upcoming Events</h1>
                 <div className="event-slider">
                   <Swiper
                       modules={[Navigation, Pagination, Scrollbar]}
@@ -52,7 +52,7 @@ export default function() {
                                 eventDescription = {item.eventDesc}
                                 departmentLogo = {item.departmentLogo}
                                 departmentName = {item.departmentName}
-                                evenDate = {item.evenDate}
+                                eventDate = {item.eventDate}
                               />
                             </SwiperSlide>   
                           )

@@ -1,7 +1,7 @@
 export const NavbarData = [
     {
         title: "Home",
-        url: '/',
+        url: '/Lycee',
         class: "nav-links"
     },
     {

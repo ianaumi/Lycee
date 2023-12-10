@@ -1,0 +1,37 @@
+
+.coecsa-container{
+    border-style: solid;
+    border-width: thin;
+    border-color: #bdc6d1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    border-style: solid;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+.coecsa-container img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.coecsa-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2rem;
+    background-color: #8c0001;
+}
+
+.coecsa-pagination h1{
+    font-size: 30px;
+    color: white;
+}
+
+.arrow {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
